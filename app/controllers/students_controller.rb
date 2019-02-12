@@ -18,7 +18,7 @@ class StudentsController < ApplicationController
     end
       @student.save
       
-    redirect student(@student)
+    redirect student_path(@student)
   end
 
   private
