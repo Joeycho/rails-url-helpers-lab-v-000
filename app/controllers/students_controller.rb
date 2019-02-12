@@ -10,10 +10,8 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    binding.pry
-    if @student.active == true
-      @studnet.active = false
-    else
+
+    if @student.active == false
       @student.active = true
     end
   end
